@@ -40,6 +40,9 @@ body {
 	background: #cecece;
 	color: #000;
 }
+button {
+	overflow: hidden;
+}
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #000;
 }
@@ -48,6 +51,16 @@ body {
   margin-top: -30px;
   margin-bottom: 100px;
 } 
+.navbar-collapse {
+	overflow-x: hidden;
+}
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+	margin-left: 0;
+	margin-right: 0;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	overflow-x: hidden;
+}
 h2 {
 	font-size: 3em;
 	margin-bottom: 50px;
@@ -59,7 +72,9 @@ h3 {
 	font-family: 'Lora', serif;
 }
 .container {
-	width: 100vw;
+	width: 100%;
+	height: auto;
+	padding: 0;
 }
 .row {
 	margin-right: 30px;
@@ -70,6 +85,6 @@ h3 {
 	margin-bottom: 40px;
 }
 .menu-items p {
-	font-size: 1.8em;
+	font-size: 1em;
 	padding: 20px;
 }
